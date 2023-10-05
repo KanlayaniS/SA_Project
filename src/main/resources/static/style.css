@@ -1,0 +1,60 @@
+html {
+    font-size: calc(60% +0.8vmin);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide-show{
+    width: 100%;
+}
+
+.slide-show .carousel-inner{
+    height: auto;
+}
+
+.api-content {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 50%;
+}
+
+.api-content .header {
+    display: flex;
+    align-items: center;
+}
+
+.api-content .header span{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #5a5a5a;
+}
+
+.api-content .header .img-thai{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.api-content .header .img-thai img{
+    width: 100%;
+}
+
+@media screen and (max-width: 391px) {
+    .slide-show{
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slide-show .carousel-inner{
+        width: 120%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .api-content{
+        max-width: 100%;
+    }
+}
