@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap');
+
 html {
     font-size: calc(60% +0.8vmin);
 }
@@ -6,6 +8,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
 }
 
 .slide-show{
@@ -42,7 +45,9 @@ html {
     width: 100%;
 }
 
+
 @media screen and (max-width: 391px) {
+
     .slide-show{
         margin: 0 auto;
         overflow: hidden;
@@ -56,5 +61,9 @@ html {
 
     .api-content{
         max-width: 100%;
+    }
+    
+    .api-content .header{
+        flex-direction: column;
     }
 }
