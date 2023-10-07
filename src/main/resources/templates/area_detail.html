@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./ayo.css"> 
+	<!-- google icon -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<title>area_detail</title>
+</head>
+<body>
+	<input type="checkbox" id="nav-cb">
+    <label for="nav-cb" class="menu"></label>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <img src="./img/logo.png" alt="LOGO">
+            </a>
+        </div>
+        <label for="nav-cb" class="menu"><span class="material-symbols-outlined">menu</span></label>
+        <div class="nav-link">
+            <label for="nav-cb" class="close-btn"><span class="material-symbols-outlined">close</span></label>
+            <ul>
+                <li><a href="/">หน้าแรก</a></li>
+                <li><a href="">ค้นหาพื้นที่</a></li>
+                <li><a href="">Reserve Area</a></li>
+                <li><a href="">Help</a></li>
+                <li>
+                    <div class="authen">
+                        <a href="">เข้าสู่ระบบ</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <H1 th:text="yo">62 Blog</H1>
+      <div class="mainbox">
+        <img class="pic1" scr="" alt="รูปพื้นที่" >
+        <div class="content-1-box1">
+            <p class="section" >เปิดบริการ:</p>        
+          	<p class="section">ที่ตั้ง:</p>
+          	<p class="section">ช่วงราคา:</p>
+            <p class="section">ขนาดพื้นที่:</p>    
+        </div>
+         <div class="content-2-box1">
+           <p class="section">สิ่งอำนวยความสะดวกแสถานที่ใกล้เคียง</p> 
+          
+           </div>
+    </div>
+    <div class="secondbox">
+      <div class="secondboxhead">
+      <H2 class="pmap">ที่ตั้งของพื้นที่</H2>
+      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956.5604900987504!2d102.82276366963323!3d16.463281485138864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a6168779a83%3A0xa9b72046b6fc4b65!2zNTUtMTQwIOC4reC4uOC4lOC4peC4ouC4suC4o-C4suC4oSDguIvguK3guKIg4LmXL-C5keC5kCBUYW1ib24gTmFpIE11ZWFuZywgQW1waG9lIE11ZWFuZyBLaG9uIEthZW4sIENoYW5nIFdhdCBLaG9uIEthZW4gNDAwMDA!5e0!3m2!1sen!2sth!4v1696681722732!5m2!1sen!2sth"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="thirdbox">
+    <div class="thirdboxhead">
+    <H2 class="pmap">พื้นที่ต้องการจอง</H2>
+     	</div>
+      <script>
+        function toggleSelect(boxId) {
+            var box = document.getElementById(boxId);
+            if (box.classList.contains('selected')) {
+                box.classList.remove('selected');
+            } else {
+                box.classList.add('selected');
+            }
+        }
+    </script>
+  <div class="mainbox">
+            <div class="box2" id="box1" onclick="toggleSelect('box1')" >p01</div>
+			<div class="box" id="box2" onclick="toggleSelect('box2')">p02</div>
+			<div class="box2" id="box3" onclick="toggleSelect('box3')">p03</div>
+			<div class="box" id="box4" onclick="toggleSelect('box4')">p04</div>
+    		<div class="box2" id="box5" onclick="toggleSelect('box5')" >p05</div>
+			<div class="box" id="box6" onclick="toggleSelect('box6')">p06</div>
+			<div class="box2" id="box7" onclick="toggleSelect('box7')">p07</div>
+			<div class="box" id="box8" onclick="toggleSelect('box8')">p08</div>
+      </div>
+      <div class="content-2-box3">
+      <div class="boxshowblue"></div>
+        <p>ไม่ว่าง</p>
+        <div class="boxshowpink"></div>
+        <p>ว่าง</p>
+    </div>
+  
+</body>
+</html>
