@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="/demo/src/main/resources/static/nav.css">
+    <link rel="stylesheet" href="/demo/src/main/resources/static/search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="nav-cb">
+    <label for="nav-cb" class="menu"></label>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <img src="./img/logo.png" alt="LOGO">
+            </a>
+        </div>
+        <label for="nav-cb" class="menu"><span class="material-symbols-outlined">menu</span></label>
+        <div class="nav-link">
+            <label for="nav-cb" class="close-btn"><span class="material-symbols-outlined">close</span></label>
+            <ul>
+                <li><a href="/">หน้าแรก</a></li>
+                <li><a href="">ค้นหาพื้นที่</a></li>
+                <li><a href="">Reserve Area</a></li>
+                <li><a href="">Help</a></li>
+                <li>
+                    <div class="authen">
+                        <a href="">เข้าสู่ระบบ</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="searchbox-area">
+        <div class="searchbanner-area">
+            <h2>ค้นหาพื้นที่ที่ใช่สำหรับคุณ</h2>
+            <div class="search">
+                <input type="text" name="" id="find" placeholder="What are you looking for?" onkeyup="search()">
+            </div>
+        </div>
+        <div class="searchcontent-area">
+            <div clas่s="searchcontainer-fluid">
+                <div class="searchcontainer">
+                    <h1>Area</h1>
+                    <div class="searchproduct-list">
+                        <div class="searchproduct">
+                            <img src="/demo/src/main/resources/static/img/market1.jpeg">
+                            <h3>เจ้าสัวพลาซ่า</h3>
+                            <p>เปิดบริการทุกวันจันทร์-อาทิตย์ เวลา 16:00 - 23:00 น.</p>
+                            <a href="#" class="searchbtn">More Info</a>
+                        </div>
+                        <div class="searchproduct">
+                            <img src="/demo/src/main/resources/static/img/kice.jpg">
+                            <h3>ศูนย์ประชุมขอนแก่น (KICE)</h3>
+                            <p>เปิดบริการทุกวันจันทร์-ศุกร์ เวลา 9:00 - 17:30 น.</p>
+                            <a href="#" class="searchbtn">More Info</a>
+                        </div>
+                        <div class="searchproduct">
+                            <img src="/demo/src/main/resources/static/img/foodie.jpeg">
+                            <h3>Foodie Bangna</h3>
+                            <p>เปิดบริการทุกวันจันทร์-อาทิตย์ เวลา 11:00 - 23:00 น.</p>
+                            <a href="#" class="searchbtn">More Info</a>
+                        </div>
+                        <div class="searchproduct">
+                            <img src="/demo/src/main/resources/static/img/tontan.jpg">
+                            <h3>ตลาดต้นตาล</h3>
+                            <p>เปิดบริการทุกวันจันทร์-ศุกร์ เวลา 17:00 - 22:30 น.</p>
+                            <a href="#" class="searchbtn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.searchproduct');
+            let l = document.getElementsByTagName('h3');
+
+            for (var i = 0; i <= l.length; i++) {
+                let a = item[i].getElementsByTagName('h3')[0];
+                let value = a.innerHTML || a.innerText || a.textContent;
+                if (value.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display = "";
+                } else {
+                    item[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

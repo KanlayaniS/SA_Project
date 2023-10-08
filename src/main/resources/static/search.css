@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    font-family: 'Prompt', sans-serif;
+}
+
+body{
+    background: #e8e8e8;
+}
+
+.wrapperresult{
+    margin: 10px auto;
+    padding: 0 10%;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.resulth1{
+    color: #4a55a2;
+    font-size: 45px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.containerresult{
+    display: grid;
+    gap: 15px;
+}
+
+.boxresult{
+    margin: auto;
+    padding: 20px;
+    width: 1050px;
+    border: 4px solid #4a55a2;
+    border-radius: 5px;
+    background: #ffffff;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boxresult img{
+    width: 350px;
+    height: 200px;
+    margin-left: 20px;
+    float: left;
+    margin-right: 40px;
+}
+
+.boxresult h3{
+    color: #4a55a2;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.boxresult p{
+    color: #000000;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.btnresult{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    border: 3px solid #4a55a2;
+    margin-top: 50px;
+    margin-left: 45%;
+    padding: 5px 20px;
+    background: #4a55a2;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btnresult:hover{
+    transition: 0.5s;
+    color: #4a55a2;
+    border: 3px solid #4a55a2;
+    background-color: white;
+}
+
+.searchproduct img{
+    width: 285px;
+    height: 150px;
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+.searchcomtainer-fluid{
+    width: 100%;
+    height: auto;
+    padding: 0px 0px 80px 0px;
+}
+
+.searchcontainer{
+    width: 1250px;
+    height: auto;
+    margin: auto;
+}
+
+.searchcontainer .searchproduct-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.searchcontainer .searchproduct-list .searchproduct{
+    width: 295px;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+ }
+
+ .searchcontainer .searchproduct-list .searchproduct p, .searchcontainer .searchproduct-list .searchproduct h3{
+    margin: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+ }
+
+ .searchcontainer .searchproduct-list .searchproduct p{
+    font-size: 14px;
+ }
+
+ .searchbanner-area{
+    background-image: url(./img/head.png);
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+ }
+
+ .searchbanner-area::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .5;
+    z-index: -1;
+ }
+
+ .searchbanner-area h2{
+    margin: 180px 0 0 120px;
+    font-size: 40px;
+    color: white;
+ }
+
+ .searchcontent-area{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background: rgb(251, 251, 251);
+    top:550px
+ }
+
+.search input{
+    margin: 15px 0 0 120px;
+    width: 50%;
+    padding: 7px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.search input::placeholder{
+    color: rgb(182, 182, 182);
+    padding: 15px;
+    font-size: 17px;
+}
+
+.searchcontainer h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.searchbtn{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    border: 3px solid #4a55a2;
+    margin-left: 180px;
+    padding: 3px 15px;
+    background: #4a55a2;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.searchbtn:hover{
+    transition: 0.5s;
+    color: #4a55a2;
+    border: 3px solid #4a55a2;
+    background-color: white;
+}
